@@ -1,6 +1,16 @@
-<footer class="footer">
-    <div class="text-center">
-        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-        <small class="copyright">{{ site.data.data.footer }}</small>
-    </div><!--//container-->
-</footer><!--//footer-->
+<footer role="contentinfo">
+  <hr/>
+  {% if site.copyright.size > 0 %}
+    <p><small class="copyright">{{ site.copyright | markdownify | replace:'<p>','' | replace:'</p>','' }}</small></p>
+  {% endif %}
+  {% if site.legal.size > 0 %}
+    <nav class="legal"><small>
+    {% for le in site.legal %}
+      <a href="{% include smart-url url=le.href %}">{{ le.name | default:le.title }}</a>
+      {% unless forloop.last %}{{ site.data.strings.separator | default:'|' }}{% endunless %}
+    {% endfor %}
+    </small></nav>
+  {% endif %}
+  <p><small>Powered by <a class="external" href="https://qwtel.com/hydejack/">Hydejack</a> v<span id="_version">7.5.2</span></small></p>
+  <hr class="sr-only"/>
+</footer>
