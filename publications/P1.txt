@@ -1,0 +1,10 @@
+@article{tang2020layer,
+  title={Layer-Wise Training Convolutional Neural Networks With Smaller Filters for Human Activity Recognition Using Wearable Sensors},
+  author={Tang, Yin and Teng, Qi and Zhang, Lei and Min, Fuhong and He, Jun},
+  journal={IEEE Sensors Journal},
+  volume={21},
+  number={1},
+  pages={581--592},
+  year={2020},
+  publisher={IEEE}
+}
