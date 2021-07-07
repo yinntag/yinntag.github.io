@@ -283,19 +283,11 @@ else
 visits = parseInt(visits) + 1
 setCookie("counter", visits, now)
 document.write("Total Visits: " + visits + " times")
+document.write('<div style="text-align:center">"Total Visits: " + visits + " times"</div>');
+
+
 
 // -->
-</script>
-
-
-<script type="text/javascript">
-if (localStorage.pagecount)
-{
-    localStorage.pagecount=Number(localStorage.pagecount) +1;
-}else{
-    localStorage.pagecount=1;
-}
-document.write("访问数: " + localStorage.pagecount + " time(s).");
 </script>
 
 
