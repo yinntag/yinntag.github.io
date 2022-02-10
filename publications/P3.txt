@@ -1,0 +1,7 @@
+@article{tang2022triple,
+  title={Triple Cross-Domain Attention on Human Activity Recognition Using Wearable Sensors},
+  author={Tang, Yin and Zhang, Lei and Teng, Qi and Min, Fuhong and Song, Aiguo},
+  journal={IEEE Transactions on Emerging Topics in Computational Intelligence},
+  year={2022},
+  publisher={IEEE}
+}
